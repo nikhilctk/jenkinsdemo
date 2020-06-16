@@ -7,13 +7,13 @@ pipeline {
       stage('Clone Git Repository') {
          steps {
              echo "cloning"
-            git credentialsId: 'ef6430b2-e140-4c33-a100-1a49c06f4b8a', url: 'https://github.com/Vishnu2611/mafil.git'
+            git credentialsId: 'ef6430b2-e140-4c33-a100-1a49c06f4b8a', url: 'https://github.com/nikhilctk/jenkinsdemo.git'
          }
       }
        stage('Test ') {
          steps {
             
-            echo "Testing demo" + env.GIT_BRANCH
+            echo "Testing demo " + env.GIT_BRANCH
             
          }
       }
